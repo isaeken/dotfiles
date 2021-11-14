@@ -1,0 +1,27 @@
+# %appdata%/nushell/nu/config/config.toml
+skip_welcome_message = true
+startup = [
+  "alias .. = cd ..",
+  "alias ... = cd ../..",
+  "alias .... = cd ../../..",
+  "alias ..... = cd ../../../..",
+  "alias ~~ = cd ~",
+  "alias -- = cd -",
+  "alias ll = ls -la",
+  "alias dt = cd 'C:\\Users\\Isa Eken\\Desktop'",
+  "alias p = cd '/projects'",
+  "alias l = ls -lF --color",
+  "alias reload = exec $SHELL -l",
+  "alias artisan = php artisan",
+  "alias migrate = php artisan migrate",
+  "alias rollback = php artisan migrate:rollback",
+  "alias seed = php artisan db:seed",
+  "alias migration = php artisan make:migration",
+  "alias controller = php artisan make:controller",
+  "alias model = php artisan make:model",
+  "alias event = php artisan make:event",
+  "alias resource = php artisan make:resource",
+  "alias request = php artisan make:request",
+  "alias queue = php artisan queue:work",
+  "alias test = ./vendor/bin/phpunit",
+]
